@@ -1,0 +1,3023 @@
+{
+    "GUID": "3fd26c00-e66d-11ea-9205-bd6f8b8bbdf5",
+    "modelName": "New Model",
+    "code": "",
+    "lastModifTS": "2020-08-26T23:03:47.222Z",
+    "persistenceSchemaVersion": "4",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "GUID": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "collectionName": "habitats",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "code": "",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "7e8ecbe0-e66e-11ea-9205-bd6f8b8bbdf5",
+                        "87893a50-e66e-11ea-9205-bd6f8b8bbdf5",
+                        "5b8ec0e0-e755-11ea-b609-9bbf28a69c4e",
+                        "096ba3a0-e75f-11ea-b609-9bbf28a69c4e"
+                    ],
+                    "required": true,
+                    "format": "",
+                    "sample": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "a6cbcfa3-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "Home Renovation",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "users",
+                    "GUID": "a6cbcfa6-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "format": "",
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "f2ff9a90-e66e-11ea-9205-bd6f8b8bbdf5",
+                            "childRelationships": [],
+                            "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "foreignField": [
+                                "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                                "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                            ],
+                            "sample": "",
+                            "GUID": "c3c3edd0-e66e-11ea-9205-bd6f8b8bbdf5",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "name": "owner",
+                    "GUID": "a6cbcfa4-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f89c5f10-e66e-11ea-9205-bd6f8b8bbdf5",
+                    "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "format": "",
+                    "sample": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "createdAt",
+                    "GUID": "a6cbcfa2-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-12T04:50:03.350Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "updatedAt",
+                    "GUID": "a6cbcfa5-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-12T04:50:03.350Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "format": "",
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "30f1c620-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "childRelationships": [],
+                            "foreignCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                            "foreignField": [
+                                "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                                "26951690-e756-11ea-b609-9bbf28a69c4e"
+                            ],
+                            "sample": "",
+                            "GUID": "27138760-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "habitatPlan"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "21bca580-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "name": "habitatPlans",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "format": "",
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "4b5a0720-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "childRelationships": [],
+                            "foreignCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                            "foreignField": [
+                                "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                                "26951690-e756-11ea-b609-9bbf28a69c4e"
+                            ],
+                            "sample": "",
+                            "GUID": "4b59e010-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "habitatPlan"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "33e4ee70-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "name": "moodBoards",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "format": "",
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "62fa0060-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "childRelationships": [],
+                            "foreignCollection": "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+                            "foreignField": [
+                                "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+                                "cd818120-e75e-11ea-b609-9bbf28a69c4e"
+                            ],
+                            "sample": "",
+                            "GUID": "57fd3240-e7f0-11ea-8df5-cd55c63cf0fc",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "roomPlan",
+                            "error": {
+                                "displayName": false
+                            }
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "34d8eb60-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "name": "roomPlans",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "a6ccba00-e66d-11ea-9205-bd6f8b8bbdf5",
+                "properties": [],
+                "type": "definitions"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "a6cce110-e66d-11ea-9205-bd6f8b8bbdf5"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hasCollation": false
+        },
+        {
+            "GUID": "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5",
+            "collectionName": "tokens",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "code": "",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "a6cbcfa7-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "format": "",
+                    "sample": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "boolean",
+                    "primaryKey": false,
+                    "name": "blacklisted",
+                    "GUID": "a6cbcfa9-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "enum": [],
+                    "sample": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "token",
+                    "GUID": "a6cbcfac-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZjE4ZWI1NmNjM2U1NTFmNTZiM2YzMjYiLCJpYXQiOjE1OTc2NTI1MDgsImV4cCI6MTYwMjQ4NzMwOH0.PMYpCl2oYBg9owIJRHO1vQZb3mzII5C_JLuQpUnl4ZM",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "name": "user",
+                    "GUID": "a6cbcfaf-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "aed66a60-e66e-11ea-9205-bd6f8b8bbdf5",
+                    "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "format": "",
+                    "sample": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "expires",
+                    "GUID": "a6cbcfab-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-10-12T07:21:48.241Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "type",
+                    "GUID": "a6cbcfad-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "refresh",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "createdAt",
+                    "GUID": "a6cbcfaa-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-17T08:21:48.245Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "updatedAt",
+                    "GUID": "a6cbcfae-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-17T08:21:48.245Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "__v",
+                    "GUID": "a6cbcfa8-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "mode": "integer32",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": 0,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "definitions": {
+                "GUID": "a6cd2f30-e66d-11ea-9205-bd6f8b8bbdf5",
+                "properties": [],
+                "type": "definitions"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "a6cbcfa7-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "a6cd2f31-e66d-11ea-9205-bd6f8b8bbdf5"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "a6cbcfac-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "token_1",
+                    "background": true,
+                    "GUID": "a6cd2f32-e66d-11ea-9205-bd6f8b8bbdf5"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hasCollation": false
+        },
+        {
+            "GUID": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "collectionName": "users",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "code": "",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "aed66a60-e66e-11ea-9205-bd6f8b8bbdf5",
+                        "f2ff9a90-e66e-11ea-9205-bd6f8b8bbdf5",
+                        "f89c5f10-e66e-11ea-9205-bd6f8b8bbdf5",
+                        "7055db20-e756-11ea-b609-9bbf28a69c4e",
+                        "99c37a30-e756-11ea-b609-9bbf28a69c4e",
+                        "21c39be0-e757-11ea-b609-9bbf28a69c4e"
+                    ],
+                    "required": true,
+                    "format": "",
+                    "sample": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "role",
+                    "GUID": "a6cbf6bc-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "user",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "firstName",
+                    "GUID": "a6cbf6b4-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "Leonardo",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "lastName",
+                    "GUID": "a6cbf6b6-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "Linardi",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "email",
+                    "GUID": "a6cbf6b3-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "leonardo@psdesignstudio.com",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "password",
+                    "GUID": "a6cbf6b7-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "$2a$08$SKQ7dXBBoCQRA4c9lglzDu79H.75MWy6MQP.4Srl31vIcnxPfjDbS",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "createdAt",
+                    "GUID": "a6cbf6b2-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-10T01:38:54.448Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "updatedAt",
+                    "GUID": "a6cbf6bd-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "format": "",
+                    "sample": "ISODate(\"2020-08-12T03:04:00.905Z\")",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "__v",
+                    "GUID": "a6cbf6b1-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "mode": "integer32",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": 1,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "objectId",
+                            "primaryKey": false,
+                            "name": "current",
+                            "GUID": "a6cbf6b9-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "87893a50-e66e-11ea-9205-bd6f8b8bbdf5",
+                            "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "foreignField": [
+                                "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                                "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                            ],
+                            "childRelationships": [],
+                            "required": true,
+                            "format": "",
+                            "sample": "",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "id": ""
+                        },
+                        {
+                            "code": "",
+                            "type": "array",
+                            "primaryKey": false,
+                            "name": "owner",
+                            "GUID": "a6cbf6ba-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "properties": [
+                                {
+                                    "type": "objectId",
+                                    "arrayItem": true,
+                                    "GUID": "a6cd7d50-e66d-11ea-9205-bd6f8b8bbdf5",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "7e8ecbe0-e66e-11ea-9205-bd6f8b8bbdf5",
+                                    "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                                    "foreignField": [
+                                        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                                        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                                    ],
+                                    "childRelationships": [],
+                                    "format": "",
+                                    "sample": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "arrayParentType": "array"
+                                }
+                            ],
+                            "additionalItems": true,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "required": true,
+                            "minItems": "",
+                            "maxItems": "",
+                            "uniqueItems": false,
+                            "enum": [],
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "id": ""
+                        },
+                        {
+                            "code": "",
+                            "type": "array",
+                            "primaryKey": false,
+                            "name": "user",
+                            "GUID": "a6cbf6bb-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "properties": [
+                                {
+                                    "type": "objectId",
+                                    "arrayItem": true,
+                                    "GUID": "a20b44e0-e66e-11ea-9205-bd6f8b8bbdf5",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "a20b6bf0-e66e-11ea-9205-bd6f8b8bbdf5",
+                                    "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                                    "foreignField": [
+                                        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                                        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                                    ],
+                                    "childRelationships": [],
+                                    "format": "",
+                                    "sample": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "arrayParentType": "array"
+                                }
+                            ],
+                            "additionalItems": true,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "required": true,
+                            "minItems": "",
+                            "maxItems": "",
+                            "uniqueItems": false,
+                            "enum": [],
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "id": ""
+                        }
+                    ],
+                    "name": "habitats",
+                    "GUID": "a6cbf6b8-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "enum": [],
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "null",
+                    "primaryKey": false,
+                    "name": "image",
+                    "GUID": "a6cbf6b5-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "format": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "sample": null
+                }
+            ],
+            "definitions": {
+                "GUID": "a6cda460-e66d-11ea-9205-bd6f8b8bbdf5",
+                "properties": [],
+                "type": "definitions"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "a6cda461-e66d-11ea-9205-bd6f8b8bbdf5"
+                },
+                {
+                    "unique": true,
+                    "key": [
+                        {
+                            "keyId": "a6cbf6b3-e66d-11ea-9205-bd6f8b8bbdf5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "email_1",
+                    "background": true,
+                    "GUID": "a6cda462-e66d-11ea-9205-bd6f8b8bbdf5"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hasCollation": false
+        },
+        {
+            "GUID": "291415c0-e755-11ea-b609-9bbf28a69c4e",
+            "collectionName": "moodBoards",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "4e2fe6e0-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "_id",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5b8ec0e0-e755-11ea-b609-9bbf28a69c4e",
+                    "childRelationships": [],
+                    "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "sample": "",
+                    "GUID": "549eef80-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "habitat",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "6c033f50-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "type",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "7165b9f0-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "layout",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "96f0eeb0-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "style",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "format": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "dac85560-e755-11ea-b609-9bbf28a69c4e",
+                                    "name": "name",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false
+                                    }
+                                },
+                                {
+                                    "type": "string",
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "format": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "e51868c0-e755-11ea-b609-9bbf28a69c4e",
+                                    "name": "layout",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false
+                                    }
+                                },
+                                {
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "objectId",
+                                            "format": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Key",
+                                            "parentRelationship": "1686c210-e758-11ea-b609-9bbf28a69c4e",
+                                            "childRelationships": [],
+                                            "foreignCollection": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                                            "foreignField": [
+                                                "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                                                "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e"
+                                            ],
+                                            "sample": "",
+                                            "GUID": "ec8b73e0-e755-11ea-b609-9bbf28a69c4e",
+                                            "description": "",
+                                            "comments": "",
+                                            "required": false,
+                                            "id": "",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array"
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "additionalItems": true,
+                                    "minItems": "",
+                                    "maxItems": "",
+                                    "uniqueItems": false,
+                                    "enum": [],
+                                    "GUID": "e8235ed0-e755-11ea-b609-9bbf28a69c4e",
+                                    "name": "images",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {}
+                                }
+                            ],
+                            "minProperties": "",
+                            "maxProperties": "",
+                            "additionalProperties": false,
+                            "enum": [],
+                            "GUID": "ae963f20-e755-11ea-b609-9bbf28a69c4e",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "board",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "aa0f0950-e755-11ea-b609-9bbf28a69c4e",
+                    "name": "boards",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "291638a0-e755-11ea-b609-9bbf28a69c4e"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            }
+        },
+        {
+            "GUID": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "collectionName": "habitatPlans",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "30f1c620-e7f0-11ea-8df5-cd55c63cf0fc"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "26951690-e756-11ea-b609-9bbf28a69c4e",
+                    "name": "_id",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "26951692-e756-11ea-b609-9bbf28a69c4e",
+                    "childRelationships": [],
+                    "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "sample": "",
+                    "GUID": "26951691-e756-11ea-b609-9bbf28a69c4e",
+                    "name": "habitat",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "26951693-e756-11ea-b609-9bbf28a69c4e",
+                    "name": "name",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "format": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "26951698-e756-11ea-b609-9bbf28a69c4e",
+                                    "name": "name",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false
+                                    }
+                                },
+                                {
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "objectId",
+                                            "format": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Key",
+                                            "parentRelationship": "7055db20-e756-11ea-b609-9bbf28a69c4e",
+                                            "childRelationships": [],
+                                            "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                                            "foreignField": [
+                                                "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                                                "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                                            ],
+                                            "sample": "",
+                                            "GUID": "60df92d0-e756-11ea-b609-9bbf28a69c4e",
+                                            "description": "",
+                                            "comments": "",
+                                            "required": false,
+                                            "id": "",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array",
+                                            "displayName": "user",
+                                            "error": {
+                                                "displayName": false
+                                            }
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "additionalItems": true,
+                                    "minItems": "",
+                                    "maxItems": "",
+                                    "uniqueItems": false,
+                                    "enum": [],
+                                    "GUID": "26951699-e756-11ea-b609-9bbf28a69c4e",
+                                    "name": "members",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "document",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "parentRelationship": "",
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "properties": [
+                                                {
+                                                    "type": "objectId",
+                                                    "format": "",
+                                                    "primaryKey": false,
+                                                    "relationshipType": "Foreign Key",
+                                                    "parentRelationship": "99c37a30-e756-11ea-b609-9bbf28a69c4e",
+                                                    "childRelationships": [],
+                                                    "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                                                    "foreignField": [
+                                                        "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                                                        "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                                                    ],
+                                                    "sample": "",
+                                                    "GUID": "906da550-e756-11ea-b609-9bbf28a69c4e",
+                                                    "name": "user",
+                                                    "code": "",
+                                                    "description": "",
+                                                    "comments": "",
+                                                    "dependencies": [],
+                                                    "required": false,
+                                                    "id": "",
+                                                    "hackoladeMeta": {},
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "type": "string",
+                                                    "minLength": "",
+                                                    "maxLength": "",
+                                                    "pattern": "",
+                                                    "format": "",
+                                                    "default": "",
+                                                    "primaryKey": false,
+                                                    "relationshipType": "",
+                                                    "parentRelationship": "",
+                                                    "childRelationships": [],
+                                                    "foreignCollection": "",
+                                                    "foreignField": [],
+                                                    "enum": [],
+                                                    "sample": "",
+                                                    "GUID": "87049690-e756-11ea-b609-9bbf28a69c4e",
+                                                    "name": "message",
+                                                    "code": "",
+                                                    "description": "",
+                                                    "comments": "",
+                                                    "dependencies": [],
+                                                    "required": false,
+                                                    "id": "",
+                                                    "hackoladeMeta": {},
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "minProperties": "",
+                                            "maxProperties": "",
+                                            "additionalProperties": false,
+                                            "enum": [],
+                                            "GUID": "2695169b-e756-11ea-b609-9bbf28a69c4e",
+                                            "description": "",
+                                            "comments": "",
+                                            "required": false,
+                                            "id": "message",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array"
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "additionalItems": true,
+                                    "minItems": "",
+                                    "maxItems": "",
+                                    "uniqueItems": false,
+                                    "enum": [],
+                                    "GUID": "2695169a-e756-11ea-b609-9bbf28a69c4e",
+                                    "name": "messages",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {}
+                                },
+                                {
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "objectId",
+                                            "format": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Key",
+                                            "parentRelationship": "3a9f7080-e757-11ea-b609-9bbf28a69c4e",
+                                            "childRelationships": [],
+                                            "foreignCollection": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                                            "foreignField": [
+                                                "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                                                "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e"
+                                            ],
+                                            "sample": "",
+                                            "GUID": "b441db40-e756-11ea-b609-9bbf28a69c4e",
+                                            "description": "",
+                                            "comments": "",
+                                            "required": false,
+                                            "id": "media",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array"
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "additionalItems": true,
+                                    "minItems": "",
+                                    "maxItems": "",
+                                    "uniqueItems": false,
+                                    "enum": [],
+                                    "GUID": "b441b430-e756-11ea-b609-9bbf28a69c4e",
+                                    "name": "attachments",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false
+                                    }
+                                }
+                            ],
+                            "minProperties": "",
+                            "maxProperties": "",
+                            "additionalProperties": false,
+                            "enum": [],
+                            "GUID": "26951697-e756-11ea-b609-9bbf28a69c4e",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "board",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "26951696-e756-11ea-b609-9bbf28a69c4e",
+                    "name": "items",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2695169c-e756-11ea-b609-9bbf28a69c4e"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            }
+        },
+        {
+            "GUID": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+            "collectionName": "media",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "21c39be0-e757-11ea-b609-9bbf28a69c4e",
+                    "childRelationships": [],
+                    "foreignCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "sample": "",
+                    "GUID": "1bfb5a90-e757-11ea-b609-9bbf28a69c4e",
+                    "name": "user",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "3a9f7080-e757-11ea-b609-9bbf28a69c4e",
+                        "1686c210-e758-11ea-b609-9bbf28a69c4e"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e",
+                    "name": "_id",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "0d6c3df0-e757-11ea-b609-9bbf28a69c4e",
+                    "name": "name",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "156bd1a0-e757-11ea-b609-9bbf28a69c4e",
+                    "name": "file",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f11fac90-e756-11ea-b609-9bbf28a69c4e"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            }
+        },
+        {
+            "GUID": "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+            "collectionName": "roomPlans",
+            "code": "",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "62fa0060-e7f0-11ea-8df5-cd55c63cf0fc"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "cd818120-e75e-11ea-b609-9bbf28a69c4e",
+                    "name": "_id",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "096ba3a0-e75f-11ea-b609-9bbf28a69c4e",
+                    "childRelationships": [],
+                    "foreignCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "foreignField": [
+                        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                    ],
+                    "sample": "",
+                    "GUID": "0161fdd0-e75f-11ea-b609-9bbf28a69c4e",
+                    "name": "habitat",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "type": "document",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "properties": [
+                        {
+                            "type": "numeric",
+                            "mode": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "default": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "sample": "",
+                            "GUID": "111f1320-e75f-11ea-b609-9bbf28a69c4e",
+                            "name": "roomHeight",
+                            "code": "",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "error": {
+                                "name": false
+                            }
+                        },
+                        {
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "type": "numeric",
+                                            "mode": "",
+                                            "unit": "",
+                                            "minimum": "",
+                                            "exclusiveMinimum": false,
+                                            "maximum": "",
+                                            "exclusiveMaximum": false,
+                                            "multipleOf": "",
+                                            "divisibleBy": "",
+                                            "default": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "parentRelationship": "",
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "enum": [],
+                                            "sample": "",
+                                            "GUID": "9866c9c0-e7ed-11ea-8df5-cd55c63cf0fc",
+                                            "name": "x",
+                                            "code": "",
+                                            "description": "",
+                                            "comments": "",
+                                            "dependencies": [],
+                                            "required": false,
+                                            "id": "",
+                                            "hackoladeMeta": {},
+                                            "error": {
+                                                "name": false
+                                            }
+                                        },
+                                        {
+                                            "type": "numeric",
+                                            "mode": "",
+                                            "unit": "",
+                                            "minimum": "",
+                                            "exclusiveMinimum": false,
+                                            "maximum": "",
+                                            "exclusiveMaximum": false,
+                                            "multipleOf": "",
+                                            "divisibleBy": "",
+                                            "default": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "parentRelationship": "",
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "enum": [],
+                                            "sample": "",
+                                            "GUID": "a175f8b0-e7ed-11ea-8df5-cd55c63cf0fc",
+                                            "name": "y",
+                                            "code": "",
+                                            "description": "",
+                                            "comments": "",
+                                            "dependencies": [],
+                                            "required": false,
+                                            "id": "",
+                                            "hackoladeMeta": {},
+                                            "error": {}
+                                        }
+                                    ],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "3d1c84d0-e75f-11ea-b609-9bbf28a69c4e",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "arrayItem": true,
+                                    "arrayParentType": "array"
+                                }
+                            ],
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "additionalItems": true,
+                            "minItems": "",
+                            "maxItems": "",
+                            "uniqueItems": false,
+                            "enum": [],
+                            "GUID": "22ba8560-e75f-11ea-b609-9bbf28a69c4e",
+                            "name": "walls",
+                            "code": "",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "enum": [],
+                    "GUID": "d0ab97f0-e75e-11ea-b609-9bbf28a69c4e",
+                    "name": "dimensions",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "type": "document",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "properties": [],
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "enum": [],
+                    "GUID": "ebfbc7f0-e75e-11ea-b609-9bbf28a69c4e",
+                    "name": "canvas",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "format": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "de146520-e7ef-11ea-8df5-cd55c63cf0fc",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "dependencies": [],
+                                    "name": "type",
+                                    "error": {}
+                                },
+                                {
+                                    "type": "string",
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "format": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "e3b632b0-e7ef-11ea-8df5-cd55c63cf0fc",
+                                    "name": "file",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false
+                                    }
+                                },
+                                {
+                                    "type": "numeric",
+                                    "mode": "",
+                                    "unit": "",
+                                    "minimum": "",
+                                    "exclusiveMinimum": false,
+                                    "maximum": "",
+                                    "exclusiveMaximum": false,
+                                    "multipleOf": "",
+                                    "divisibleBy": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "ef112660-e7ef-11ea-8df5-cd55c63cf0fc",
+                                    "name": "x",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "type": "numeric",
+                                    "mode": "",
+                                    "unit": "",
+                                    "minimum": "",
+                                    "exclusiveMinimum": false,
+                                    "maximum": "",
+                                    "exclusiveMaximum": false,
+                                    "multipleOf": "",
+                                    "divisibleBy": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": "",
+                                    "GUID": "f0342290-e7ef-11ea-8df5-cd55c63cf0fc",
+                                    "name": "y",
+                                    "code": "",
+                                    "description": "",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "hackoladeMeta": {}
+                                }
+                            ],
+                            "minProperties": "",
+                            "maxProperties": "",
+                            "additionalProperties": false,
+                            "enum": [],
+                            "GUID": "d335cd60-e7ef-11ea-8df5-cd55c63cf0fc",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "ce2458f0-e7ef-11ea-8df5-cd55c63cf0fc",
+                    "name": "objects",
+                    "code": "",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "bbd3e670-e75e-11ea-b609-9bbf28a69c4e"
+            },
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "bucketId": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5",
+            "name": "habitat",
+            "code": "",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5",
+                "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                "291415c0-e755-11ea-b609-9bbf28a69c4e",
+                "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e"
+            ],
+            "backgroundColor": {
+                "r": 63,
+                "g": 81,
+                "b": 181,
+                "a": 1
+            },
+            "show": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "7e8ecbe0-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk habitats._id to users.habitats.owner.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b8-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6ba-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cd7d50-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "87893a50-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk habitats._id to users.habitats.current",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b8-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b9-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "a20b6bf0-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk habitats._id to users.habitats.owner.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b8-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6bb-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a20b44e0-e66e-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "aed66a60-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk users._id to tokens.user",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfaf-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f2ff9a90-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk users._id to habitats.users.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa6-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "c3c3edd0-e66e-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f89c5f10-e66e-11ea-9205-bd6f8b8bbdf5",
+            "name": "fk users._id to habitats.owner",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa4-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "5b8ec0e0-e755-11ea-b609-9bbf28a69c4e",
+            "name": "fk habitats._id to moodBoards.habitat",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "291415c0-e755-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "291415c0-e755-11ea-b609-9bbf28a69c4e",
+                    "549eef80-e755-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "26951692-e756-11ea-b609-9bbf28a69c4e",
+            "name": "fk habitats._id to moodBoards.habitat",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951691-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "7055db20-e756-11ea-b609-9bbf28a69c4e",
+            "name": "fk users._id to plans.items.[0].members.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951696-e756-11ea-b609-9bbf28a69c4e",
+                    "26951697-e756-11ea-b609-9bbf28a69c4e",
+                    "26951699-e756-11ea-b609-9bbf28a69c4e",
+                    "60df92d0-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "99c37a30-e756-11ea-b609-9bbf28a69c4e",
+            "name": "fk users._id to plans.items.[0].messages.[0].user",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951696-e756-11ea-b609-9bbf28a69c4e",
+                    "26951697-e756-11ea-b609-9bbf28a69c4e",
+                    "2695169a-e756-11ea-b609-9bbf28a69c4e",
+                    "2695169b-e756-11ea-b609-9bbf28a69c4e",
+                    "906da550-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "21c39be0-e757-11ea-b609-9bbf28a69c4e",
+            "name": "fk users._id to media.user",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                    "1bfb5a90-e757-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1",
+            "lineSize": 2
+        },
+        {
+            "GUID": "3a9f7080-e757-11ea-b609-9bbf28a69c4e",
+            "name": "fk media._id to plans.items.[0].attachments.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+            "parentField": [
+                [
+                    "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                    "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951696-e756-11ea-b609-9bbf28a69c4e",
+                    "26951697-e756-11ea-b609-9bbf28a69c4e",
+                    "b441b430-e756-11ea-b609-9bbf28a69c4e",
+                    "b441db40-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "1686c210-e758-11ea-b609-9bbf28a69c4e",
+            "name": "fk media._id to moodBoards.boards.[0].images.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+            "parentField": [
+                [
+                    "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                    "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "291415c0-e755-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "291415c0-e755-11ea-b609-9bbf28a69c4e",
+                    "aa0f0950-e755-11ea-b609-9bbf28a69c4e",
+                    "ae963f20-e755-11ea-b609-9bbf28a69c4e",
+                    "e8235ed0-e755-11ea-b609-9bbf28a69c4e",
+                    "ec8b73e0-e755-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "096ba3a0-e75f-11ea-b609-9bbf28a69c4e",
+            "name": "fk habitats._id to roomPlans.habitat",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "parentField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+            "childField": [
+                [
+                    "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+                    "0161fdd0-e75f-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "30f1c620-e7f0-11ea-8df5-cd55c63cf0fc",
+            "name": "fk habitatPlans._id to habitats.habitatPlans.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "parentField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951690-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "21bca580-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "27138760-e7f0-11ea-8df5-cd55c63cf0fc"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "4b5a0720-e7f0-11ea-8df5-cd55c63cf0fc",
+            "name": "fk habitatPlans._id to habitats.habitatPlans.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+            "parentField": [
+                [
+                    "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                    "26951690-e756-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "33e4ee70-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "4b59e010-e7f0-11ea-8df5-cd55c63cf0fc"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "62fa0060-e7f0-11ea-8df5-cd55c63cf0fc",
+            "name": "fk roomPlans._id to habitats.roomPlans.[0]",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+            "parentField": [
+                [
+                    "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+                    "cd818120-e75e-11ea-b609-9bbf28a69c4e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+            "childField": [
+                [
+                    "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                    "34d8eb60-e7f0-11ea-8df5-cd55c63cf0fc",
+                    "57fd3240-e7f0-11ea-8df5-cd55c63cf0fc"
+                ]
+            ],
+            "childCardinality": "1"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "a6cbcfa0-e66d-11ea-9205-bd6f8b8bbdf5": "_id",
+        "a6cbcfa6-e66d-11ea-9205-bd6f8b8bbdf5": "users",
+        "a6cbcfa4-e66d-11ea-9205-bd6f8b8bbdf5": "owner",
+        "a6cbcfa2-e66d-11ea-9205-bd6f8b8bbdf5": "createdAt",
+        "a6cbcfa5-e66d-11ea-9205-bd6f8b8bbdf5": "updatedAt",
+        "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5": "habitats",
+        "a6cbcfa7-e66d-11ea-9205-bd6f8b8bbdf5": "_id",
+        "a6cbcfa9-e66d-11ea-9205-bd6f8b8bbdf5": "blacklisted",
+        "a6cbcfac-e66d-11ea-9205-bd6f8b8bbdf5": "token",
+        "a6cbcfaf-e66d-11ea-9205-bd6f8b8bbdf5": "user",
+        "a6cbcfab-e66d-11ea-9205-bd6f8b8bbdf5": "expires",
+        "a6cbcfad-e66d-11ea-9205-bd6f8b8bbdf5": "type",
+        "a6cbcfaa-e66d-11ea-9205-bd6f8b8bbdf5": "createdAt",
+        "a6cbcfae-e66d-11ea-9205-bd6f8b8bbdf5": "updatedAt",
+        "a6cbcfa8-e66d-11ea-9205-bd6f8b8bbdf5": "__v",
+        "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5": "tokens",
+        "a6cbf6b0-e66d-11ea-9205-bd6f8b8bbdf5": "_id",
+        "a6cbf6bc-e66d-11ea-9205-bd6f8b8bbdf5": "role",
+        "a6cbf6b4-e66d-11ea-9205-bd6f8b8bbdf5": "firstName",
+        "a6cbf6b6-e66d-11ea-9205-bd6f8b8bbdf5": "lastName",
+        "a6cbf6b3-e66d-11ea-9205-bd6f8b8bbdf5": "email",
+        "a6cbf6b7-e66d-11ea-9205-bd6f8b8bbdf5": "password",
+        "a6cbf6b2-e66d-11ea-9205-bd6f8b8bbdf5": "createdAt",
+        "a6cbf6bd-e66d-11ea-9205-bd6f8b8bbdf5": "updatedAt",
+        "a6cbf6b1-e66d-11ea-9205-bd6f8b8bbdf5": "__v",
+        "a6cbf6b8-e66d-11ea-9205-bd6f8b8bbdf5": "habitats",
+        "a6cbf6b9-e66d-11ea-9205-bd6f8b8bbdf5": "current",
+        "a6cbf6ba-e66d-11ea-9205-bd6f8b8bbdf5": "owner",
+        "a6cbf6bb-e66d-11ea-9205-bd6f8b8bbdf5": "user",
+        "a6cbf6b5-e66d-11ea-9205-bd6f8b8bbdf5": "image",
+        "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5": "users",
+        "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5": "habitat",
+        "7e8ecbe0-e66e-11ea-9205-bd6f8b8bbdf5": "fk habitats._id to users.habitats.owner.[0]",
+        "87893a50-e66e-11ea-9205-bd6f8b8bbdf5": "fk habitats._id to users.habitats.current",
+        "a20b6bf0-e66e-11ea-9205-bd6f8b8bbdf5": "fk habitats._id to users.habitats.owner.[0]",
+        "aed66a60-e66e-11ea-9205-bd6f8b8bbdf5": "fk users._id to tokens.user",
+        "f2ff9a90-e66e-11ea-9205-bd6f8b8bbdf5": "fk users._id to habitats.users.[0]",
+        "f89c5f10-e66e-11ea-9205-bd6f8b8bbdf5": "fk users._id to habitats.owner",
+        "291415c0-e755-11ea-b609-9bbf28a69c4e": "moodBoards",
+        "4e2fe6e0-e755-11ea-b609-9bbf28a69c4e": "_id",
+        "549eef80-e755-11ea-b609-9bbf28a69c4e": "habitat",
+        "5b8ec0e0-e755-11ea-b609-9bbf28a69c4e": "fk habitats._id to moodBoards.habitat",
+        "6c033f50-e755-11ea-b609-9bbf28a69c4e": "type",
+        "7165b9f0-e755-11ea-b609-9bbf28a69c4e": "layout",
+        "96f0eeb0-e755-11ea-b609-9bbf28a69c4e": "style",
+        "aa0f0950-e755-11ea-b609-9bbf28a69c4e": "boards",
+        "dac85560-e755-11ea-b609-9bbf28a69c4e": "name",
+        "e51868c0-e755-11ea-b609-9bbf28a69c4e": "layout",
+        "e8235ed0-e755-11ea-b609-9bbf28a69c4e": "images",
+        "26951690-e756-11ea-b609-9bbf28a69c4e": "_id",
+        "26951691-e756-11ea-b609-9bbf28a69c4e": "habitat",
+        "26951693-e756-11ea-b609-9bbf28a69c4e": "name",
+        "26951696-e756-11ea-b609-9bbf28a69c4e": "items",
+        "26951698-e756-11ea-b609-9bbf28a69c4e": "name",
+        "26951699-e756-11ea-b609-9bbf28a69c4e": "members",
+        "2695169a-e756-11ea-b609-9bbf28a69c4e": "messages",
+        "2693b700-e756-11ea-b609-9bbf28a69c4e": "habitatPlans",
+        "26951692-e756-11ea-b609-9bbf28a69c4e": "fk habitats._id to moodBoards.habitat",
+        "7055db20-e756-11ea-b609-9bbf28a69c4e": "fk users._id to plans.items.[0].members.[0]",
+        "87049690-e756-11ea-b609-9bbf28a69c4e": "message",
+        "99c37a30-e756-11ea-b609-9bbf28a69c4e": "fk users._id to plans.items.[0].messages.[0].user",
+        "906da550-e756-11ea-b609-9bbf28a69c4e": "user",
+        "b441b430-e756-11ea-b609-9bbf28a69c4e": "attachments",
+        "f11d89b0-e756-11ea-b609-9bbf28a69c4e": "media",
+        "fa7fe1b0-e756-11ea-b609-9bbf28a69c4e": "_id",
+        "0d6c3df0-e757-11ea-b609-9bbf28a69c4e": "name",
+        "156bd1a0-e757-11ea-b609-9bbf28a69c4e": "file",
+        "21c39be0-e757-11ea-b609-9bbf28a69c4e": "fk users._id to media.user",
+        "1bfb5a90-e757-11ea-b609-9bbf28a69c4e": "user",
+        "3a9f7080-e757-11ea-b609-9bbf28a69c4e": "fk media._id to plans.items.[0].attachments.[0]",
+        "1686c210-e758-11ea-b609-9bbf28a69c4e": "fk media._id to moodBoards.boards.[0].images.[0]",
+        "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e": "roomPlans",
+        "cd818120-e75e-11ea-b609-9bbf28a69c4e": "_id",
+        "d0ab97f0-e75e-11ea-b609-9bbf28a69c4e": "dimensions",
+        "ebfbc7f0-e75e-11ea-b609-9bbf28a69c4e": "canvas",
+        "096ba3a0-e75f-11ea-b609-9bbf28a69c4e": "fk habitats._id to roomPlans.habitat",
+        "0161fdd0-e75f-11ea-b609-9bbf28a69c4e": "habitat",
+        "111f1320-e75f-11ea-b609-9bbf28a69c4e": "roomHeight",
+        "22ba8560-e75f-11ea-b609-9bbf28a69c4e": "walls",
+        "9866c9c0-e7ed-11ea-8df5-cd55c63cf0fc": "x",
+        "a175f8b0-e7ed-11ea-8df5-cd55c63cf0fc": "y",
+        "ce2458f0-e7ef-11ea-8df5-cd55c63cf0fc": "objects",
+        "de146520-e7ef-11ea-8df5-cd55c63cf0fc": "type",
+        "e3b632b0-e7ef-11ea-8df5-cd55c63cf0fc": "file",
+        "ef112660-e7ef-11ea-8df5-cd55c63cf0fc": "x",
+        "f0342290-e7ef-11ea-8df5-cd55c63cf0fc": "y",
+        "a6cbcfa3-e66d-11ea-9205-bd6f8b8bbdf5": "name",
+        "30f1c620-e7f0-11ea-8df5-cd55c63cf0fc": "fk habitatPlans._id to habitats.habitatPlans.[0]",
+        "21bca580-e7f0-11ea-8df5-cd55c63cf0fc": "habitatPlans",
+        "33e4ee70-e7f0-11ea-8df5-cd55c63cf0fc": "moodBoards",
+        "4b5a0720-e7f0-11ea-8df5-cd55c63cf0fc": "fk habitatPlans._id to habitats.habitatPlans.[0]",
+        "34d8eb60-e7f0-11ea-8df5-cd55c63cf0fc": "roomPlans",
+        "62fa0060-e7f0-11ea-8df5-cd55c63cf0fc": "fk roomPlans._id to habitats.roomPlans.[0]"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "3fd26c01-e66d-11ea-9205-bd6f8b8bbdf5"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "3fd26c02-e66d-11ea-9205-bd6f8b8bbdf5"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v4.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": false,
+    "appTarget": "MONGODB",
+    "creationTS": "2020-08-25T00:52:28.480Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.1.15"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "a6cc44d0-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "x": 579,
+                        "y": 137,
+                        "width": 248,
+                        "height": 143,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a6cd0820-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "x": 179,
+                        "y": 137,
+                        "width": 237,
+                        "height": 155,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a6cd2f33-e66d-11ea-9205-bd6f8b8bbdf5",
+                        "x": 176,
+                        "y": 326,
+                        "width": 248,
+                        "height": 270,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "291415c0-e755-11ea-b609-9bbf28a69c4e",
+                        "x": 982,
+                        "y": 117,
+                        "width": 225,
+                        "height": 184,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "2693b700-e756-11ea-b609-9bbf28a69c4e",
+                        "x": 954,
+                        "y": 323,
+                        "width": 275,
+                        "height": 226,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f11d89b0-e756-11ea-b609-9bbf28a69c4e",
+                        "x": 547,
+                        "y": 588,
+                        "width": 178,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bbd1eaa0-e75e-11ea-b609-9bbf28a69c4e",
+                        "x": 925,
+                        "y": 576,
+                        "width": 201,
+                        "height": 239,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 136,
+                        "y": 77,
+                        "GUID": "a6e06910-e66d-11ea-9205-bd6f8b8bbdf5"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "decorativeSymbols": [],
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false,
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

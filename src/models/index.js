@@ -1,0 +1,13 @@
+module.exports.Token = require('./token.model');
+module.exports.User = require('./user.model');
+module.exports.Habitat = require('./habitat.model');
+module.exports.Media = require('./media.model');
+module.exports.MoodBoard = require('./mood-board.model');
+module.exports.Address = require('./address.model');
+module.exports.Project = require('./project.model');
+module.exports.Article = require('./article.model');
+module.exports.Note = require('./note.model');
+module.exports.Link = require('./link.model');
+module.exports.PublicTag = require('./public-tag.model');
+module.exports.RoomPlan = require('./room-plan.model');
+module.exports.Notification = require('./notification.model');

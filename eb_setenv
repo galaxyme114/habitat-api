@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+eb setenv $(cat $1 | grep -v ^# | xargs)

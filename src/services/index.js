@@ -1,0 +1,15 @@
+module.exports.authService = require('./auth.service');
+module.exports.emailService = require('./email.service');
+module.exports.tokenService = require('./token.service');
+module.exports.userService = require('./user.service');
+module.exports.habitatService = require('./habitat.service');
+module.exports.mediaService = require('./media.service');
+module.exports.moodboardService = require('./mood-board.service');
+module.exports.addressService = require('./address.service');
+module.exports.projectService = require('./project.service');
+module.exports.articleService = require('./article.service');
+module.exports.noteService = require('./note.service');
+module.exports.linkService = require('./link.service');
+module.exports.publicTagService = require('./public-tag.service');
+module.exports.roomPlanService = require('./room-plan.service');
+module.exports.notificationService = require('./notification.service');
